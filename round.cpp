@@ -12,6 +12,7 @@ RoundRobin::RoundRobin(std::vector<PlayerStrategy*> players,
 
 void RoundRobin::thread_func(int games)
 {
+	srand(time(0));
 	while (1)
 	{
 		_pool_lock.lock();

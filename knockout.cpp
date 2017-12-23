@@ -23,6 +23,7 @@ void thread_func(
 	std::mutex& next_lock,
 	std::mutex& print_lock
 ) {
+	srand(time(0));
 	size_t i;
 
 	while (1) {
